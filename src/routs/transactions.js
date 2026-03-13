@@ -1,3 +1,24 @@
+/**
+ * @module routs/transactions
+ * Router for /transactions endpoints.
+ *
+ * Responsibilities:
+ * - Expose CRUD endpoints for transactions:
+ *   - GET    /transactions
+ *   - POST   /transactions
+ *   - GET    /transactions/:transactionId
+ *   - PUT    /transactions/:transactionId
+ *   - DELETE /transactions/:transactionId
+ *
+ * Usage:
+ * import express from 'express';
+ * import transactionsRouter from './routs/transactions.js';
+ * app.use('/transactions', transactionsRouter);
+ *
+ * @requires express
+ * @requires ../controllers/transactions.js
+ */
+// ...existing code...
 import express from 'express';
 import {
   deleteTransactionsByIdHandler,
